@@ -51,3 +51,26 @@ img{
     max-width: 100%;
 }
 /* UTILIDADES */
+
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+/*Header*/
+.header{
+    background-image: url(../../img/banner.jpg) ;
+    height: 60rem; /*esto es para la altura sea 600px*/
+    background-size: cover; /*para que tome todo el espacio disponible*/
+    background-repeat: no-repeat;
+    background-position: center center; /*para que cuando se achique se centre al medio*/
+}
+.header__texto{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
