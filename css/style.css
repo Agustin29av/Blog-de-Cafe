@@ -74,3 +74,47 @@ img{
     color: var(--blanco);
     margin-top: 5rem;
 }
+@media (min-width: 768px){
+    .header__texto{
+        margin-top: 15rem;
+    }
+}
+
+@media(min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between; /*justify-content para alinear horizontalmente*/
+        align-items: center; /*align-items para alinear verticalmente*/
+    }
+}
+.logo{
+    color: var(--blanco);
+}
+.logo__nombre{
+    font-weight: 400;
+}
+.logo__bold{
+    font-weight: 700;
+}
+
+@media (min-width: 768px){
+    .navegacion{
+        display: flex; /*tamaño pantalla se muestra normal*/
+        gap: 2rem;
+    }
+}
+
+.navegacion__enlace{
+    display: block; /*para que este uno abajo del otro cuando se haga mas chico*/
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+@media (min-width: 768px){
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr; /*Para crear las dos columnas, en este caso una mas graned que la otra*/
+    }
+}
+
