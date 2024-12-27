@@ -142,7 +142,13 @@ img{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
 }
+
+.boton:hover{
+    cursor:pointer;
+}
+
 @media (min-width: 768px){
     .boton{
         display: inline-block; /* este media achica el boton en disp grandes */
@@ -237,14 +243,25 @@ img{
 }
 
 .formulario{
-
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto; /* para que quede el formulario arriba de la foto */
+    width: 95%;
+    padding: 5rem;
 }
 .campo{
-
+    display: flex;
+    margin-bottom: 2rem; /*separacion entre cada campo*/
+    gap: 2rem;
 }
 .campo__label{
-
+    flex: 0 0 9rem; /*esto es para acomodar los labels*/
+    text-align: right;
+   /* padding-right: 2rem; manera antigua, la nueva es gap*/ 
 }
 .campo__field{
-    
+    flex: 1; /* esto es para hacer bien anchos los campos*/
+    border: 1px solid var(--gris);
+}
+.campo__field--textarea{
+    height: 20rem; /*son 200px*/
 }
